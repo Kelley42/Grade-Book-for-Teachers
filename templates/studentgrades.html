@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Student Grades
+{% endblock %}
+
+{% block main %}
+    <form action="/studentgrades" method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Subject 1 Avg</th>
+                    <th>Subject 2 Avg</th>
+                    <th>Subject 3 Avg</th>
+                    <th>Subject 4 Avg</th>
+                    <th>Subject 5 Avg</th>
+                    <th>Subject 6 Avg</th>
+                    <th>Behavior Avg</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for student in students %}
+                    <tr>
+                        <td>{{ student.studentname }}</td>
+                        <td>{{ student.subject1avg }}</td>
+                        <td>{{ student.subject2avg }}</td>
+                        <td>{{ student.subject3avg }}</td>
+                        <td>{{ student.subject4avg }}</td>
+                        <td>{{ student.subject5avg }}</td>
+                        <td>{{ student.subject6avg }}</td>
+                        <td>{{ student.behavioravg }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfooter>
+                <a class="nav-link" href="/findstudentgrades">Find Subject Grades</a>
+            </tfooter>
+        </table>
+        
+    </form>
+{% endblock %}

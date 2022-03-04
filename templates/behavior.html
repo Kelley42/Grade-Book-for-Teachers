@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Behavior
+{% endblock %}
+
+{% block main %}
+    <form action="/behavior" method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Week 1</th>
+                    <th>Week 2</th>
+                    <th>Week 3</th>
+                    <th>Week 4</th>
+                    <th>Week 5</th>
+                    <th>Week 6</th>
+                    <th>Week 7</th>
+                    <th>Week 8</th>
+                    <th>Week 9</th>
+                    <th>Average</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for week in weeks %}
+                    <tr>
+                        <td>{{ week.studentname }}</td>
+                        <td>{{ week.week1 }}</td>
+                        <td>{{ week.week2 }}</td>
+                        <td>{{ week.week3 }}</td>
+                        <td>{{ week.week4 }}</td>
+                        <td>{{ week.week5 }}</td>
+                        <td>{{ week.week6 }}</td>
+                        <td>{{ week.week7 }}</td>
+                        <td>{{ week.week8 }}</td>
+                        <td>{{ week.week9 }}</td>
+                        <td>{{ week.average }}</td>
+                        <td>{{ week.comments }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfooter>
+                <a class="nav-link" href="/managebehavior">Add Behavior Grades</a>
+            </tfooter>
+        </table>
+        
+    </form>
+{% endblock %}

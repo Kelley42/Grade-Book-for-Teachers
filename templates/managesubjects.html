@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Manage Subjects
+{% endblock %}
+
+{% block main %}
+    <form action="/managesubjects" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject1" placeholder="Subject 1" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject2" placeholder="Subject 2" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject3" placeholder="Subject 3" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject4" placeholder="Subject 4" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject5" placeholder="Subject 5" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="subject6" placeholder="Subject 6" type="text">
+        </div>
+        <!--
+        <div class="form-group">
+            <select class="form-control" name="subject1">
+                <option class="dropdown-item">Subject 1{{ disabled }}</option>
+                <option class="dropdown-item">teacher</option> 
+                <option class="dropdown-item">student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="subject2">
+                <option class="dropdown-item">Subject 2{{ disabled }}</option>
+                <option class="dropdown-item">teacher</option> 
+                <option class="dropdown-item">student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="subject3">
+                <option class="dropdown-item">Subject 3{{ disabled }}</option>
+                <option class="dropdown-item">teacher</option> 
+                <option class="dropdown-item">student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="subject4">
+                <option class="dropdown-item">Subject 4{{ disabled }}</option>
+                <option class="dropdown-item">teacher</option> 
+                <option class="dropdown-item">student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="subject5">
+                <option class="dropdown-item">Subject 5{{ disabled }}</option>
+                <option class="dropdown-item">teacher</option> 
+                <option class="dropdown-item">student</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <select class="form-control" name="subject6">
+                <option class="dropdown-item">Subject 6{{ disabled }}</option>
+                <option class="dropdown-item">teacher</option> 
+                <option class="dropdown-item">student</option>
+            </select>
+        </div>
+        -->
+        <button class="btn btn-primary" type="submit">Create Subjects</button>
+    </form>
+{% endblock %}
+            
+            
+            
+         <!--   
+        <table class="index table">
+            <thead>
+                <tr>
+                    <th>Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for subject in subjects %}
+                    <tr>
+                        <td>{{ subject.reading }}</td>
+                        <td>{{ subject.math }}</td>
+                        <td>{{ subject.english }}</td>
+                        <td>{{ subject.spelling }}</td>
+                        <td>{{ subject.socialstudies }}</td>
+                        <td>{{ subject.science }}</td>
+                        <td>{{ subject.behavior }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        
+    </form>
+ -->

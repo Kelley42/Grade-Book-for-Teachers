@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Subject 4
+{% endblock %}
+
+{% block main %}
+    <form action="/subject4" method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Test 1</th>
+                    <th>Test 2</th>
+                    <th>Test 3</th>
+                    <th>Test 4</th>
+                    <th>Test 5</th>
+                    <th>Test 6</th>
+                    <th>Test 7</th>
+                    <th>Test 8</th>
+                    <th>Test 9</th>
+                    <th>Average</th>
+                    <th>Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for test in tests %}
+                    <tr>
+                        <td>{{ test.studentname }}</td>
+                        <td>{{ test.test1 }}</td>
+                        <td>{{ test.test2 }}</td>
+                        <td>{{ test.test3 }}</td>
+                        <td>{{ test.test4 }}</td>
+                        <td>{{ test.test5 }}</td>
+                        <td>{{ test.test6 }}</td>
+                        <td>{{ test.test7 }}</td>
+                        <td>{{ test.test8 }}</td>
+                        <td>{{ test.test9 }}</td>
+                        <td>{{ test.average }}</td>
+                        <td>{{ test.comments }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfooter>
+                <a class="nav-link" href="/managesubject4">Add Subject 4 Grades</a>
+            </tfooter>
+        </table>
+        
+    </form>
+{% endblock %}

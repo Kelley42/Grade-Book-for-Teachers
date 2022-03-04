@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Subjects
+{% endblock %}
+
+{% block main %}
+    <form action="/index" method="post">
+        <table class="index table">
+            <thead>
+                <tr>
+                    <th colspan="6">Subjects</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for subject in subjects %}
+                    <tr>
+                        <td><a class="nav-link" href="/subject1">{{ subject.subject1 }}</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="nav-link" href="/subject2">{{ subject.subject2 }}</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="nav-link" href="/subject3">{{ subject.subject3 }}</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="nav-link" href="/subject4">{{ subject.subject4 }}</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="nav-link" href="/subject5">{{ subject.subject5 }}</a></td>
+                    </tr>
+                    <tr>
+                        <td><a class="nav-link" href="/subject6">{{ subject.subject6 }}</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfooter>
+                <a class="nav-link" href="/managesubjects">Add Subjects</a>
+            </tfooter>
+        </table>
+        
+    </form>
+{% endblock %}

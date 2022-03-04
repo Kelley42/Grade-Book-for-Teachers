@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Absent/Tardy
+{% endblock %}
+
+{% block main %}
+    <form action="/absenttardy" method="post">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Absent</th>
+                    <th>Tardy</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for day in days %}
+                    <tr>
+                        <td>{{ day.studentname }}</td>
+                        <td>{{ day.absent }}</td>
+                        <td>{{ day.tardy }}</td>
+                    </tr>
+                {% endfor %}
+                <!--<button onclick="deleteThisRow()">Delete Row</button>
+                <span id="row"></span>-->
+            </tbody>
+            <tfooter>
+                <a class="nav-link" href="/manageabsenttardy">Add Absent/Tardy Days</a>
+            </tfooter>
+        </table>
+        <!--<script>
+            function deleteThisRow() {
+                document.getElementById("row").deleteRow(0);
+                db.execute("DELETE FROM absenttardy WHERE id = :id AND studentname = :studentname, id = session["user_id"], studentname=studentname)
+                }
+        </script> -->
+    </form>
+{% endblock %}
