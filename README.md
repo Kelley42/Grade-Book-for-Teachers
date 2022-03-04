@@ -33,34 +33,34 @@ be easiest to have the subjects decided first and then the teacher could go into
 each student's grades. 
 
 ### How the app works
-Initially the user is directed to the Log In page. If the user does not have an account, however,
-the user must register by clicking Create Account. Then she must type in a name, username, password, and
+Initially users are directed to the Log In page. If they do not have an account, however,
+they must register by clicking Create Account. Then they must type in a name, username, password, and
 matching confirmation password. If any of these are not present, an apology message will appear prompting
-the user to remedy it. Once she is registered, the user then logs in with her username and password and
-is taken to the index page where it shows all the subjects that she teaches. 
+them to remedy it. Once users are registered, they then log in with their username and password and
+are taken to the index page where it shows all the subjects that they teach. 
 
-If the user is new and has not created any subjects yet, then she can click the link to Add Subjects. 
-From here she is presented with a form to fill in subjects. Once submitted, the index page now shows all 
-her subjects. From this page, each subject is now a link to a separate page which will display all of 
+If users are new and have not created any subjects yet, then they can click the link to Add Subjects. 
+From here they are presented with a form to fill in subjects. Once submitted, the index page now shows all 
+their subjects. From this page, each subject is now a link to a separate page which will display all of 
 that subject's students and grades. 
 
-If the teacher creates a Reading subject and clicks on the Reading link, she is taken to the Reading page 
-where, if she has not added any students yet, she can click on the Add Grades link. On that page, she can
-add the student's name and grades for the semester. She can also add comments for that semester, which is
+If users create a Reading subject, for example, and click on the Reading link, they are taken to the Reading page 
+where, if they have not added any students yet, they can click on the Add Grades link. On that page, they can
+add the student's name and grades for the semester. They can also add comments for that semester, which is
 a helpful reminder for teachers if the student is improving or needs additional help in certain areas.
 After submitting this form, a table is then displayed showing the student's name, grades, and the teacher's
 comment. Also the average, rounded to the tenth, is displayed, which is helpful for teachers who need to 
 do averaging for progress reports or report cards.
 
-The teacher can do each subject like this, returning to see the index page at any time by clicking Subjects.
-When finished, she can then create behavior grades for each of her students by clicking Behavior at the 
-top. It works the same way as the subjects pages. She inputs the student's name and grades for each week
-into the form and submits them, causing a table to display showing the student's name, grades, average, 
-and any comments she wished to make.
+Users can do each subject like this, returning to see the index page at any time by clicking Subjects.
+When finished, teachers can then create behavior grades for each of their students by clicking Behavior at the 
+top. It works the same way as the subjects pages. They input the student's name and grades for each week
+into the form and submit them, causing a table to display showing the student's name, grades, average, 
+and any comments they wished to make.
 
-The teacher can then create an absent/tardy table with all of her students in it. She can click on Absent/
-Tardy, which takes her to a form where she can input the student's name and the number of absent days
-and tardy days. The table will display all her students' absences and tardies. This is also helpful as 
+Teachers can then create an absent/tardy table with all of their students in it. They can click on Absent/
+Tardy, which takes them to a form where they can input the student's name and the number of absent days
+and tardy days. The table will display all their students' absences and tardies. This is also helpful as 
 progress reports and report cards often require teachers to keep track of these numbers as well.
 
 I hope that I can someday improve this app even more so that teachers will be able to use this every
