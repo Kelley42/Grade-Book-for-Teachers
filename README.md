@@ -1,7 +1,7 @@
 # GradeBook for Teachers
 #### Video Demo:  <https://youtu.be/B6pehotV_Po>
 ### Description:
-I designed GradeBook for Teachers as a gradebook that teachers can use to record grades, for subjects as 
+I designed GradeBook for Teachers as my capstone project for Harvard's CS50x course. It is a gradebook that teachers can use to record grades, for subjects as 
 well as for behavior, and absences/tardies. As a former teacher, it was a chore keeping track of the 
 students' grades, so I wanted something that would simplify not only recording the grades but also 
 averaging them together. I enjoyed working on the tables from pset9, so I took that knowledge and applied
